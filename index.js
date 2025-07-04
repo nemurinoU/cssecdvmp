@@ -1,20 +1,29 @@
+/***
+ * This module controls
+ */
+
+// Import libraries and middlewares
 import express from "express";
 import exphbs from "express-handlebars";
 import routes from './routes/routes.js';
 import db from './model/db.js';
 import bodyParser from 'body-parser';
 import Handlebars from 'handlebars';
-import path from 'path';
+import path from 'path';    
 import bcrypt from 'bcrypt';
 import passport from 'passport';
 import initPassport from './controllers/passport-config.js';
+
+// For flash messages towards the user
 import flash from 'express-flash';
+
+// Session handling and cookies
+// TO DO: Centralize the CRUD operations and SESSION handling
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 
 
-
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8888;
 
 // import { connectToMongo, getDb }  from './conn.js';
 // import { URLSearchParams }      from 'url';
@@ -37,6 +46,9 @@ app.use ( bodyParser.urlencoded({ extended: true }));
 app.use ( bodyParser.json() );
 app.use ( express.json() );
 app.use ( flash() );
+
+
+// SESS
 app.use ( session({
     secret: process.env.SESSION_SECRET || "WAHAHAHAHA",
     resave: false,
