@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap");
+
+
+.quote-container {
+  margin-top: -100px;
+  font-family: 'Work Sans', sans-serif;
+  background: url('/images/assets/bg-stars.jpg') center center / cover no-repeat;
+}
+
+body {
+    background: linear-gradient(to bottom right, #1a1a40, #000);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content-section {
+  height: calc(100vh); 
+  background: linear-gradient(to bottom right, #1a1a40, #000);
+}

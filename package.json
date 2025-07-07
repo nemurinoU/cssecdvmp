@@ -19,18 +19,16 @@
     "url": "^0.11.1"
   },
   "scripts": {
-    "start": "nodemon index.js",
-    "pop1": "node magic.js",
-    "pop2": "node magic2.js"
+    "start": "nodemon server.js"
   },
   "name": "apdev_dup",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "-----------------------------------------------------------------------\r NOTE:   \r     - Make sure to have a working \r     - Collections should still be manually imported to MongoDB.\r         - Obtain the JSON files of the pre-existing collections in 'db_data_init' folder\r         - Using MongoDB Compass, import the file collections to the database \"apdev_test\"",
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.1.10"
   }
 }

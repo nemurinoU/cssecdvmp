@@ -1,0 +1,24 @@
+.logo-img:hover {
+    filter: brightness(60%);
+    transition: filter 0.5s ease;
+}
+
+.navbar-glass {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.10em;
+    font-weight: 300;
+    color: #fff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+               0 0 12px rgba(255, 255, 255, 0.5),
+               0 0 18px rgba(255, 255, 255, 0.3);
+}

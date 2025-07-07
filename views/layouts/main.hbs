@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        {{> head}}
+
+        <link rel="stylesheet" href="../../css/index.css" />
+    </head>
+
+    <body>
+        {{> navbar}}
+        {{!--
+        {{#unless session}}
+            {{> navbar}}
+        {{else}}
+            {{> navbar_logged}}
+        {{/unless}}
+        {{{body}}}
+        
+        {{> footer}}
+
+        --}}
+        {{{body}}}
+
+
+    </body>
+</html>
