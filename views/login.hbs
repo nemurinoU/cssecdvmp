@@ -1,1 +1,45 @@
-LOGIN PAGE
+{{! views/login.hbs }}
+
+<div class="login-page d-flex justify-content-center align-items-center">
+  <div class="login-card glass-card p-4">
+    <h2 class="text-center mb-4 text-white">ログイン — Log In</h2>
+
+    {{#if error}}
+      <div class="alert alert-danger text-center">
+        {{error}}
+      </div>
+    {{/if}}
+
+    <form action="/login" method="POST">
+      <div class="mb-3">
+        <label for="username" class="form-label text-white">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          class="form-control bg-transparent text-white border-light"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label text-white">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control bg-transparent text-white border-light"
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn btn-light w-100 mt-3 glow-hover">
+        Login
+      </button>
+    </form>
+
+    <div class="mt-4 text-center">
+      <a href="/register" class="small">New explorer? Register here</a>
+    </div>
+  </div>
+</div>
