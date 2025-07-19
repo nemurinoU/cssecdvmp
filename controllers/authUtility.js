@@ -24,11 +24,18 @@ const authUtility = {
         queryParams.append('feedback', 'Incorrect username or password!')
         const queryString = queryParams.toString()
 
+        /*
         passport.authenticate('local', {
             success: '/',
             fail: `/login?${queryString}`,
             failureFlash: true,
-        })(req, res, next)
+        })(req, res, next)*/
+        console.log(`Attempting to Authenticate!`)
+        // callback to database
+        // check for auth
+        // hash and salt
+        // return query URL parameters
+        // if success, redirect accordingly
     },
 
     logout: (req, res) => {
@@ -60,3 +67,5 @@ const authUtility = {
         }
     }
 }
+
+export default authUtility
