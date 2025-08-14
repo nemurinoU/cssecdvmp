@@ -28,7 +28,7 @@ Making the app safer, smarter, and more reliable by employing real-world securit
 - **Backend:** Node.js?
 - **Frontend:** Bootstrap CSS and JS
 - **Database:** MongoDB?
-- **Authentication:** PHP?
+- **Authentication:** Node.js
 - **Logging:** 
 
 ---
